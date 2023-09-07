@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<math.h>
+int main(){
+    double x1;
+    double x2;
+    double y1;
+    double y2;
+    double c;
+    scanf("%lf\n", &x1);
+    scanf("%lf\n", &y1);
+    scanf("%lf\n", &x2);
+    scanf("%lf\n", &y2);
+    c = sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
+    printf("%.4lf\n",c);
+    return 0;
+}
