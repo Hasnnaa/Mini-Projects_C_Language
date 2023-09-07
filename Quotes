@@ -11,7 +11,7 @@ int main() {
         printf("For others write : \n");
         printf("\n L1 L2 L3 L4 \n");
     }
-    else if (strcmp(input, "coffe") == 0){
+    else if (strcmp(input, "coffee") == 0){ 
         printf("I like my coffee like I like my mornings: dark and strong.\n");
     }
     else if (strcmp(input, "programming") == 0 || strcmp(input, "coding") == 0){
@@ -25,17 +25,17 @@ int main() {
         printf("Life is like riding a bicycle. To keep your balance, you must keep moving.\n");
     }
     else if (strcmp(in, "L2") == 0 || strcmp(in, "l2") == 0){
-        printf("Life is a long lesson in humility.\n");
+        printf("Life is a journey that must be traveled no matter how bad the roads and accommodations.\n");
     }
     else if (strcmp(in, "L3") == 0 || strcmp(in, "l3") == 0){
-        printf("Life is a long lesson in humility.\n");
+        printf("Life is really simple, but we insist on making it complicated.\n");
     }
-     else if (strcmp(in, "L4") == 0 || strcmp(in, "l4") == 0){
+    else if (strcmp(in, "L4") == 0 || strcmp(in, "l4") == 0){
         printf("Life is an echo; what you send out comes back.\n");
     }
-    
-     else {
+    else {
         printf("error\n");
     }
     return 0;
 }
+
