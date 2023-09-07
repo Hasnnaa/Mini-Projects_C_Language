@@ -3,28 +3,26 @@
 #include<string.h>
 
 int main(){
-char z [20];
-char triangle, circle, Trapezium, square, rectangle [20];
-printf("write a ...... : ");
-scanf("%c", z);
+   char z [100];
+   printf("Triangle, Circle, Trapezium, Square, Rectangle\n");
+   printf("write a Geometric Shape : ");
+   scanf("%s", z);
 
- double a; //base
+    double a; //base
     double b; // height
     double h, i, j, k, l;
     double c; // side
     double d; //length
     double e; //width
     
-    if (z == 'triangle'){
+    if (strcmp(z,"triangle") ==0  || strcmp(z, "Triangle") == 0){
          printf("write the base of a right triangle : ");
-    scanf("%lf", &a);
-    printf("write the height of a right triangle : ");
-    scanf("%lf", &b);
+         scanf("%lf", &a);
+         printf("write the height of a right triangle : ");
+         scanf("%lf", &b);
     h = 0.5 * a * b; // The area of a right triangle is given by the formula: A = 1/2 * base * height
     printf("The area of a right triangle is : \n A = %.2lf\n", h);
-    }
-    
-    else if (z == 'circle'){
+   } else if (strcmp(z, "circle") == 0 || strcmp(z, "Circle") == 0){
          double pi = 3.141592654;
     double R;
     printf("write radius of a circle : ");
@@ -33,7 +31,7 @@ scanf("%c", z);
     printf("The area of a circle is : \n A = %.2lf\n", i);
     }
     
-    else if (z == 'Trapezium'){
+    else if (strcmp(z, "trapezium") == 0 || strcmp(z, "Trapezium") == 0){
          printf("write the sum of bases of Area of a Trapezium : ");
     scanf("%lf", &a);
     printf("write the height of bases of Area of a Trapezium : ");
@@ -42,14 +40,14 @@ scanf("%c", z);
     printf("The area of a trapezium is : \n A = %.2lf\n", j);
     }
     
-    else if (z == 'square'){
+    else if (strcmp(z, "square") == 0 || strcmp(z, "square") == 0){
          printf("write the side of of a square : ");
     scanf("%lf", &c);
     k = c * c; // The area of a square is given by the formula : A = c * c
     printf("The area of a square is : \n A = %.2lf\n", k);
     }
     
-    else if (z == 'rectangle'){
+    else if (strcmp(z, "rectangle") == 0 || strcmp(z, "Rectangle") == 0){
          printf("write the length of a rectangle : ");
     scanf("%lf", &d);
     printf("write the width of a rectangle : ");
