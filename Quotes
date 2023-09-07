@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char input[100];
+    printf("Enter topic : ");
+    scanf("%s", input); // Reads a string from the user.
+
+    if (strcmp(input, "life") == 0) {
+        printf("Life is an adventure, dare it.\n");
+        printf("For others write : \n");
+        printf("\n L1 L2 L3 L4 \n");
+    }
+    else if (strcmp(input, "coffe") == 0){
+        printf("I like my coffee like I like my mornings: dark and strong.\n");
+    }
+    else if (strcmp(input, "programming") == 0 || strcmp(input, "coding") == 0){
+        printf("Talk is cheap. Show me the code.\n");
+    }
+    
+    char in [100];
+    scanf("%s", in);
+    
+    if (strcmp(in, "L1") == 0 || strcmp(in, "l1") == 0){
+        printf("Life is like riding a bicycle. To keep your balance, you must keep moving.\n");
+    }
+    else if (strcmp(in, "L2") == 0 || strcmp(in, "l2") == 0){
+        printf("Life is a long lesson in humility.\n");
+    }
+    else if (strcmp(in, "L3") == 0 || strcmp(in, "l3") == 0){
+        printf("Life is a long lesson in humility.\n");
+    }
+     else if (strcmp(in, "L4") == 0 || strcmp(in, "l4") == 0){
+        printf("Life is an echo; what you send out comes back.\n");
+    }
+    
+     else {
+        printf("error\n");
+    }
+    return 0;
+}
