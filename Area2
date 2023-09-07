@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <math.h>
+#include<string.h>
+
+int main(){
+char z [20];
+char triangle, circle, Trapezium, square, rectangle [20];
+printf("write a ...... : ");
+scanf("%c", z);
+
+ double a; //base
+    double b; // height
+    double h, i, j, k, l;
+    double c; // side
+    double d; //length
+    double e; //width
+    
+    if (z == 'triangle'){
+         printf("write the base of a right triangle : ");
+    scanf("%lf", &a);
+    printf("write the height of a right triangle : ");
+    scanf("%lf", &b);
+    h = 0.5 * a * b; // The area of a right triangle is given by the formula: A = 1/2 * base * height
+    printf("The area of a right triangle is : \n A = %.2lf\n", h);
+    }
+    
+    else if (z == 'circle'){
+         double pi = 3.141592654;
+    double R;
+    printf("write radius of a circle : ");
+    scanf("%lf", &R);
+    i = pi * pow(R,2); //The area of a circle is given by the formula: A = pi * R²
+    printf("The area of a circle is : \n A = %.2lf\n", i);
+    }
+    
+    else if (z == 'Trapezium'){
+         printf("write the sum of bases of Area of a Trapezium : ");
+    scanf("%lf", &a);
+    printf("write the height of bases of Area of a Trapezium : ");
+    scanf("%lf", &b);
+    j = 0.5 * a * b; // The area of a trapezium  is given by the formula : A = 0.5 * the sum of bases * height
+    printf("The area of a trapezium is : \n A = %.2lf\n", j);
+    }
+    
+    else if (z == 'square'){
+         printf("write the side of of a square : ");
+    scanf("%lf", &c);
+    k = c * c; // The area of a square is given by the formula : A = c * c
+    printf("The area of a square is : \n A = %.2lf\n", k);
+    }
+    
+    else if (z == 'rectangle'){
+         printf("write the length of a rectangle : ");
+    scanf("%lf", &d);
+    printf("write the width of a rectangle : ");
+    scanf("%lf", &e);
+    l = d * e; //The area of a rectangle is given by the formula : A = d * e
+    printf("The area of a rectangle is : \n A = %.2lf\n", l);
+    }
+    
+    else {
+        printf("error");
+    }return 0;
+    
+}
