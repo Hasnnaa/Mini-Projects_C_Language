@@ -13,9 +13,13 @@ int main() {
     }
     else if (strcmp(input, "coffee") == 0){ 
         printf("I like my coffee like I like my mornings: dark and strong.\n");
+        printf("For others write : \n");
+        printf("\n C1 C2 C3 C4 \n");
     }
     else if (strcmp(input, "programming") == 0 || strcmp(input, "coding") == 0){
         printf("Talk is cheap. Show me the code.\n");
+        printf("For others write : \n");
+        printf("\n P1 P2 P3 P4 \n");
     }
     
     char in [100];
@@ -32,6 +36,22 @@ int main() {
     }
     else if (strcmp(in, "L4") == 0 || strcmp(in, "l4") == 0){
         printf("Life is an echo; what you send out comes back.\n");
+    }
+    
+    char i [100];
+    scanf("%s", i);
+    
+    if (strcmp(i, "C1") == 0 || strcmp(in, "c1") == 0){
+        printf("I like coffee because it gives me the illusion that I might be awake\n");
+    }
+    else if (strcmp(i, "C2") == 0 || strcmp(in, "c2") == 0){
+        printf("Life begins after coffee\n");
+    }
+    else if (strcmp(i, "C3") == 0 || strcmp(in, "c3") == 0){
+        printf("But even a bad cup of coffee is better than no coffee at all\n");
+    }
+     else if (strcmp(i, "C4") == 0 || strcmp(in, "c4") == 0){
+        printf("Coffee is the best thing to douse the sunrise with.\n");
     }
     else {
         printf("error\n");
